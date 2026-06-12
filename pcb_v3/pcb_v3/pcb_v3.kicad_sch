@@ -1335,6 +1335,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Network08_US"
 			(pin_names
 				(offset 0)
@@ -5036,6 +5176,12 @@
 		(uuid "eda98693-8ed1-49cd-a284-3a457a9d1bbb")
 	)
 	(junction
+		(at 90.17 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50910b56-a2c9-4ec8-ba3e-88db739dfd1f")
+	)
+	(junction
 		(at 67.31 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5046,12 +5192,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8fc9bbad-2db9-4578-ae0d-d6e418f27e17")
-	)
-	(junction
-		(at 90.17 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9df17e9f-b9b0-4030-96cb-0a33d08f5f80")
 	)
 	(no_connect
 		(at 130.81 113.03)
@@ -5235,6 +5375,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 92.71) (xy 106.68 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a1c88b9-008d-4282-b50f-288b951d35c2")
+	)
+	(wire
+		(pts
 			(xy 29.21 170.18) (xy 43.18 170.18)
 		)
 		(stroke
@@ -5385,16 +5535,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 92.71) (xy 92.71 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dedc25d-2e00-4ce3-9e20-8e583f7475b6")
-	)
-	(wire
-		(pts
 			(xy 71.12 128.27) (xy 68.58 128.27)
 		)
 		(stroke
@@ -5462,6 +5602,16 @@
 			(type default)
 		)
 		(uuid "47d1f8f3-b4d7-4111-b332-23981c8fb017")
+	)
+	(wire
+		(pts
+			(xy 90.17 92.71) (xy 93.98 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4855d0ab-f380-4cbe-b629-4a76097bc7d1")
 	)
 	(wire
 		(pts
@@ -7042,7 +7192,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 115.57 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -10704,6 +10854,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 97.79 92.71 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba739f16-d09e-4b1d-831f-2b16a154b21e")
+		(property "Reference" "R1"
+			(at 97.79 86.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 97.79 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 97.79 94.488 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 97.79 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11f2bd69-f1f5-48e2-9b11-41bb191dd8a9")
+		)
+		(pin "2"
+			(uuid "f687c411-52d1-445a-ab1b-8f9ea70a5a48")
+		)
+		(instances
+			(project "pcb_v3"
+				(path "/77ec6267-f937-435f-8f7a-86540cc589d9"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "TCRT5000:TCRT5000")
 		(at 198.12 87.63 0)
 		(unit 1)
@@ -12056,7 +12286,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 92.71 92.71 270)
+		(at 106.68 92.71 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12067,7 +12297,7 @@
 		(fields_autoplaced yes)
 		(uuid "eddbd685-2c4f-4e9e-bd21-63267de4c465")
 		(property "Reference" "#PWR022"
-			(at 88.9 92.71 0)
+			(at 102.87 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12078,7 +12308,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 96.52 92.7099 90)
+			(at 110.49 92.7099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12089,7 +12319,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 92.71 0)
+			(at 106.68 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12100,7 +12330,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 92.71 0)
+			(at 106.68 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12111,7 +12341,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 92.71 92.71 0)
+			(at 106.68 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
